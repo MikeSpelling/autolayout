@@ -10,7 +10,7 @@
 #import "ALCollectionViewCell.h"
 
 NSString* const ALSlide5Cell = @"ALCollectionViewCell";
-NSInteger const ALSlide5NumItems = 18;
+NSInteger const ALSlide5NumItems = 30;
 
 
 @interface ALSlide5()
@@ -83,6 +83,7 @@ NSInteger const ALSlide5NumItems = 18;
     cell.title.text = [self titleForIndex:indexPath.item];
     
     CGFloat pos = (CGFloat)indexPath.item/(CGFloat)ALSlide5NumItems;
+    cell.title.textColor = [UIColor colorWithRed:1-pos green:1-pos blue:1-pos alpha:1];
     cell.backgroundColor = [UIColor colorWithRed:pos green:pos blue:pos alpha:1];
     
     cell.widthConstraint.active = UIInterfaceOrientationIsPortrait([UIApplication sharedApplication].statusBarOrientation);
@@ -93,7 +94,7 @@ NSInteger const ALSlide5NumItems = 18;
 {
     NSMutableString *string = [NSMutableString new];
     for (int i=0; i<=index; i++) {
-        string = [[string stringByAppendingString:[NSString stringWithFormat:@"%ld", (long)index]] mutableCopy];
+        string = [[string stringByAppendingString:[NSString stringWithFormat:@"%ld", (long)index+1]] mutableCopy];
     }
     return string;
 }
