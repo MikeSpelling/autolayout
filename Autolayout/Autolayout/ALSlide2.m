@@ -32,9 +32,23 @@
     label.text = textField.text;
 }
 
+-(IBAction)clear:(id)sender
+{
+    if (sender == self.button1) {
+        self.label1.text = @"";
+        self.textField1.text = @"";
+    } else if (sender == self.button2) {
+        self.label2.text = @"";
+        self.textField2.text = @"";
+    } else if (sender == self.button3) {
+        self.label3.text = @"";
+        self.textField3.text = @"";
+    }
+}
+
 -(IBAction)next
 {
-    [self performSegueWithIdentifier:@"push1" sender:self];
+    [self performSegueWithIdentifier:@"push2" sender:self];
 }
 
 @end

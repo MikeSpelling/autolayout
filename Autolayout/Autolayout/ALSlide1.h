@@ -12,10 +12,13 @@
 
 @property (nonatomic, weak) IBOutlet UITextField *topTextField;
 @property (nonatomic, weak) IBOutlet UITextField *bottomTextField;
+@property (nonatomic, weak) IBOutlet UIButton *topButton;
+@property (nonatomic, weak) IBOutlet UIButton *bottomButton;
 @property (nonatomic, weak) IBOutlet UILabel *topLabel;
 @property (nonatomic, weak) IBOutlet UILabel *bottomLabel;
 
 -(IBAction)textChanged:(UITextField *)textField;
+-(IBAction)clear:(id)sender;
 -(IBAction)next;
 
 

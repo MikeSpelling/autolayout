@@ -27,6 +27,17 @@
     }
 }
 
+-(IBAction)clear:(id)sender
+{
+    if (sender == self.topButton) {
+        self.topLabel.text = @"";
+        self.topTextField.text = @"";
+    } else if (sender == self.bottomButton) {
+        self.bottomLabel.text = @"";
+        self.bottomTextField.text = @"";
+    }
+}
+
 -(IBAction)next
 {
     [self performSegueWithIdentifier:@"push1" sender:self];
