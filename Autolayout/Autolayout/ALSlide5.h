@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ALSlide5 : UIViewController
+@interface ALSlide5 : UIViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+
+@property (nonatomic, weak) IBOutlet UICollectionView *collectionView;
 
 -(IBAction)next;
 

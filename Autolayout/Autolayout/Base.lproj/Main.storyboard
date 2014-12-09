@@ -702,12 +702,30 @@
                                 <color key="textColor" red="0.96078431610000004" green="0.28627452250000002" blue="0.59215688710000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zyz-LZ-0EV">
+                                <rect key="frame" x="16" y="134" width="568" height="930"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="K3x-Jf-Jjn">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="pKH-pf-tIi" id="B1Y-9c-3yf"/>
+                                    <outlet property="delegate" destination="pKH-pf-tIi" id="Lc0-Nz-0nu"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="0.18823529780000001" green="0.18823529780000001" blue="0.18823529780000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="zyz-LZ-0EV" firstAttribute="leading" secondItem="9Yo-TZ-gRI" secondAttribute="leading" constant="16" id="DmW-Ic-JPE"/>
                             <constraint firstItem="Woz-oA-rjG" firstAttribute="top" secondItem="jpY-nX-Sxs" secondAttribute="bottom" constant="16" id="OJm-Jq-0RQ"/>
+                            <constraint firstAttribute="bottom" secondItem="zyz-LZ-0EV" secondAttribute="bottom" constant="16" id="U8p-Pm-Cqq"/>
                             <constraint firstAttribute="trailing" secondItem="Woz-oA-rjG" secondAttribute="trailing" constant="16" id="aN7-0k-9Ze"/>
+                            <constraint firstAttribute="trailing" secondItem="zyz-LZ-0EV" secondAttribute="trailing" constant="16" id="mnW-tA-ZZm"/>
                             <constraint firstItem="Woz-oA-rjG" firstAttribute="leading" secondItem="9Yo-TZ-gRI" secondAttribute="leading" constant="16" id="ogy-0t-65e"/>
+                            <constraint firstItem="zyz-LZ-0EV" firstAttribute="top" secondItem="Woz-oA-rjG" secondAttribute="bottom" constant="16" id="w1J-d8-mX4"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -721,6 +739,9 @@
                     </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="1080"/>
+                    <connections>
+                        <outlet property="collectionView" destination="zyz-LZ-0EV" id="wDl-Yk-LIK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wku-7G-JOK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
