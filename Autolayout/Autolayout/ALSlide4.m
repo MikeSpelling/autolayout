@@ -46,7 +46,7 @@
 
 -(IBAction)next
 {
-//    [self performSegueWithIdentifier:@"push4" sender:self];
+    [self performSegueWithIdentifier:@"push4" sender:self];
 }
 
 @end

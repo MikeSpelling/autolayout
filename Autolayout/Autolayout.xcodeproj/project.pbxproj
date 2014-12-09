@@ -10,6 +10,7 @@
 		904CE8B91A371803003F8622 /* ALSlide2.m in Sources */ = {isa = PBXBuildFile; fileRef = 904CE8B81A371803003F8622 /* ALSlide2.m */; };
 		904CE8BC1A373669003F8622 /* ALSlide3.m in Sources */ = {isa = PBXBuildFile; fileRef = 904CE8BB1A373669003F8622 /* ALSlide3.m */; };
 		904CE8BF1A373D33003F8622 /* ALSlide4.m in Sources */ = {isa = PBXBuildFile; fileRef = 904CE8BE1A373D33003F8622 /* ALSlide4.m */; };
+		904CE8C21A37464A003F8622 /* ALSlide5.m in Sources */ = {isa = PBXBuildFile; fileRef = 904CE8C11A37464A003F8622 /* ALSlide5.m */; };
 		90D9C7E71A0A8B8D009046E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D9C7E61A0A8B8D009046E9 /* main.m */; };
 		90D9C7EA1A0A8B8D009046E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D9C7E91A0A8B8D009046E9 /* AppDelegate.m */; };
 		90D9C7ED1A0A8B8D009046E9 /* ALSlide1.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D9C7EC1A0A8B8D009046E9 /* ALSlide1.m */; };
@@ -36,6 +37,8 @@
 		904CE8BB1A373669003F8622 /* ALSlide3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALSlide3.m; sourceTree = "<group>"; };
 		904CE8BD1A373D33003F8622 /* ALSlide4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSlide4.h; sourceTree = "<group>"; };
 		904CE8BE1A373D33003F8622 /* ALSlide4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALSlide4.m; sourceTree = "<group>"; };
+		904CE8C01A37464A003F8622 /* ALSlide5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSlide5.h; sourceTree = "<group>"; };
+		904CE8C11A37464A003F8622 /* ALSlide5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALSlide5.m; sourceTree = "<group>"; };
 		90D9C7E11A0A8B8D009046E9 /* Autolayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Autolayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90D9C7E51A0A8B8D009046E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90D9C7E61A0A8B8D009046E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -104,6 +107,8 @@
 				90D9C7F11A0A8B8D009046E9 /* Images.xcassets */,
 				90D9C7F31A0A8B8D009046E9 /* LaunchScreen.xib */,
 				90D9C7E41A0A8B8D009046E9 /* Supporting Files */,
+				904CE8C01A37464A003F8622 /* ALSlide5.h */,
+				904CE8C11A37464A003F8622 /* ALSlide5.m */,
 			);
 			path = Autolayout;
 			sourceTree = "<group>";
@@ -239,6 +244,7 @@
 				90D9C7EA1A0A8B8D009046E9 /* AppDelegate.m in Sources */,
 				904CE8BF1A373D33003F8622 /* ALSlide4.m in Sources */,
 				904CE8BC1A373669003F8622 /* ALSlide3.m in Sources */,
+				904CE8C21A37464A003F8622 /* ALSlide5.m in Sources */,
 				90D9C7E71A0A8B8D009046E9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
