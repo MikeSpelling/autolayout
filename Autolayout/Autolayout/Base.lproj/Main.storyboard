@@ -741,11 +741,54 @@
                     <size key="freeformSize" width="600" height="1080"/>
                     <connections>
                         <outlet property="collectionView" destination="zyz-LZ-0EV" id="wDl-Yk-LIK"/>
+                        <segue destination="GvQ-Jr-1AX" kind="show" identifier="push5" id="JwG-Jx-wlr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wku-7G-JOK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4147" y="427"/>
+        </scene>
+        <!--Slide 6-->
+        <scene sceneID="PRr-dx-UfD">
+            <objects>
+                <viewController id="GvQ-Jr-1AX" customClass="ALSlide6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y6g-p0-g3O"/>
+                        <viewControllerLayoutGuide type="bottom" id="EvJ-wS-Wlf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RwB-KI-Ere">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visual Format" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zig-w5-q8z">
+                                <rect key="frame" x="16" y="80" width="568" height="38"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="32"/>
+                                <color key="textColor" red="0.96078431610000004" green="0.28627452250000002" blue="0.59215688710000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18823529780000001" green="0.18823529780000001" blue="0.18823529780000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="zig-w5-q8z" firstAttribute="leading" secondItem="RwB-KI-Ere" secondAttribute="leading" constant="16" id="Air-eg-eYr"/>
+                            <constraint firstAttribute="trailing" secondItem="zig-w5-q8z" secondAttribute="trailing" constant="16" id="fzk-Ju-jmw"/>
+                            <constraint firstItem="zig-w5-q8z" firstAttribute="top" secondItem="Y6g-p0-g3O" secondAttribute="bottom" constant="16" id="xus-kC-8dV"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Slide 6" id="jgx-qg-fL9">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="xcW-oC-7WA">
+                            <color key="tintColor" red="0.93333333730000001" green="0.93333333730000001" blue="0.93333333730000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="next" destination="GvQ-Jr-1AX" id="SHb-hW-xVw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="1080"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hn6-lm-Qvb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5053" y="427"/>
         </scene>
     </scenes>
 </document>

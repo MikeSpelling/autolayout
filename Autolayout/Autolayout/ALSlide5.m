@@ -40,7 +40,7 @@ NSInteger const ALSlide5NumItems = 30;
 
 -(IBAction)next
 {
-//    [self performSegueWithIdentifier:@"push5" sender:self];
+    [self performSegueWithIdentifier:@"push5" sender:self];
 }
 
 
@@ -86,6 +86,7 @@ NSInteger const ALSlide5NumItems = 30;
     cell.title.textColor = [UIColor colorWithRed:1-pos green:1-pos blue:1-pos alpha:1];
     cell.backgroundColor = [UIColor colorWithRed:pos green:pos blue:pos alpha:1];
     
+//    cell.widthConstraint.constant = 100;
     cell.widthConstraint.active = UIInterfaceOrientationIsPortrait([UIApplication sharedApplication].statusBarOrientation);
     cell.heightConstraint.active = !cell.widthConstraint.active;
 }
