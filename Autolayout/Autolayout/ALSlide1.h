@@ -8,12 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ALFirstViewController : UIViewController <UITextFieldDelegate>
+@interface ALSlide1 : UIViewController
 
 @property (nonatomic, weak) IBOutlet UITextField *topTextField;
 @property (nonatomic, weak) IBOutlet UITextField *bottomTextField;
 @property (nonatomic, weak) IBOutlet UILabel *topLabel;
 @property (nonatomic, weak) IBOutlet UILabel *bottomLabel;
+
+-(IBAction)textChanged:(UITextField *)textField;
+-(IBAction)next;
 
 
 @end

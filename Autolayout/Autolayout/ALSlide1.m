@@ -6,22 +6,30 @@
 //  Copyright (c) 2014 Michael Atkins-Spelling. All rights reserved.
 //
 
-#import "ALFirstViewController.h"
+#import "ALSlide1.h"
 
-@implementation ALFirstViewController
+@implementation ALSlide1
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.topLabel.text = @"";
+    self.bottomLabel.text = @"";
 }
 
-- (void)textFieldDidEndEditing:(UITextField *)textField
+-(IBAction)textChanged:(UITextField *)textField
 {
     if (textField == self.topTextField) {
         self.topLabel.text = self.topTextField.text;
     } else if (textField == self.bottomTextField) {
         self.bottomLabel.text = self.bottomTextField.text;
     }
+}
+
+-(IBAction)next
+{
+    [self performSegueWithIdentifier:@"push1" sender:self];
 }
 
 @end
