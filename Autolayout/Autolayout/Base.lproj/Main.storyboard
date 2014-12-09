@@ -19,12 +19,60 @@
                         </textAttributes>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yka-u3-06A"/>
+                        <segue destination="uuK-en-VeB" kind="relationship" relationship="rootViewController" id="5l8-Og-xhw"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EpN-3C-UTO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-521" y="427"/>
+            <point key="canvasLocation" x="-1091" y="427"/>
+        </scene>
+        <!--Welcome-->
+        <scene sceneID="ej0-z1-gs6">
+            <objects>
+                <viewController id="uuK-en-VeB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p6j-Sd-YYw"/>
+                        <viewControllerLayoutGuide type="bottom" id="tUs-EI-8TQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CQa-QZ-ry1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Automagical Layout" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bl5-rR-QVE">
+                                <rect key="frame" x="16" y="128" width="568" height="43"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" red="0.96078431606292725" green="0.28627452254295349" blue="0.59215688705444336" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Michael Spelling - iPlayer Radio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLJ-zy-ft5">
+                                <rect key="frame" x="16" y="1020" width="568" height="28"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" red="0.93333333730697632" green="0.93333333730697632" blue="0.93333333730697632" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18823529779911041" green="0.18823529779911041" blue="0.18823529779911041" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="cLJ-zy-ft5" firstAttribute="leading" secondItem="CQa-QZ-ry1" secondAttribute="leading" constant="16" id="2U3-bO-hR6"/>
+                            <constraint firstAttribute="trailing" secondItem="cLJ-zy-ft5" secondAttribute="trailing" constant="16" id="4hg-wu-AJf"/>
+                            <constraint firstAttribute="bottom" secondItem="cLJ-zy-ft5" secondAttribute="bottom" constant="32" id="BEo-do-jnS"/>
+                            <constraint firstItem="bl5-rR-QVE" firstAttribute="top" secondItem="p6j-Sd-YYw" secondAttribute="bottom" constant="64" id="WAX-hg-MWL"/>
+                            <constraint firstAttribute="trailing" secondItem="bl5-rR-QVE" secondAttribute="trailing" constant="16" id="cZX-dG-de2"/>
+                            <constraint firstItem="cLJ-zy-ft5" firstAttribute="top" relation="greaterThanOrEqual" secondItem="bl5-rR-QVE" secondAttribute="bottom" constant="32" id="xgc-1d-6CJ"/>
+                            <constraint firstItem="bl5-rR-QVE" firstAttribute="leading" secondItem="CQa-QZ-ry1" secondAttribute="leading" constant="16" id="y7p-Iq-qHD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Welcome" id="RAh-sR-eGD">
+                        <barButtonItem key="rightBarButtonItem" title="Lets a go!" id="qnR-Wu-dxQ">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="vrU-9Z-CtC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nha-67-McP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-355" y="427"/>
         </scene>
         <!--Slide 1-->
         <scene sceneID="tne-QT-ifu">
@@ -167,7 +215,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Next" id="nh4-gw-Uv1">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <action selector="next" destination="BYZ-38-t0r" id="dBM-Zs-ifj"/>
+                                <segue destination="C0q-1L-MIz" kind="show" id="JXI-Ld-BRw"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -180,7 +228,6 @@
                         <outlet property="topButton" destination="I8U-4L-J1C" id="n9w-je-652"/>
                         <outlet property="topLabel" destination="FVb-kF-6Og" id="lWU-GQ-WTe"/>
                         <outlet property="topTextField" destination="M7U-wi-kCR" id="kYu-Ak-O54"/>
-                        <segue destination="C0q-1L-MIz" kind="show" identifier="push1" id="7ci-27-B22"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -375,7 +422,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Next" id="9TV-NB-GV8">
                             <color key="tintColor" red="0.93333333730697632" green="0.93333333730697632" blue="0.93333333730697632" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <action selector="next" destination="C0q-1L-MIz" id="De5-61-Sww"/>
+                                <segue destination="pjA-ht-EMi" kind="show" id="KRM-26-sfd"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -392,7 +439,6 @@
                         <outlet property="textField1" destination="8qs-X9-XXM" id="SaZ-eB-IhN"/>
                         <outlet property="textField2" destination="JhT-y8-47x" id="3iK-OP-m0r"/>
                         <outlet property="textField3" destination="EDf-ZR-NW3" id="czT-5M-4Tc"/>
-                        <segue destination="pjA-ht-EMi" kind="show" identifier="push2" id="z9h-ZH-hyC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t0H-8Z-fYy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -521,15 +567,12 @@
                         <barButtonItem key="rightBarButtonItem" title="Next" id="8b5-AM-6Qw">
                             <color key="tintColor" red="0.93333333730000001" green="0.93333333730000001" blue="0.93333333730000001" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <action selector="next" destination="pjA-ht-EMi" id="Ibv-ic-dRK"/>
+                                <segue destination="2YQ-67-qLf" kind="show" id="abY-V4-QLe"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="1080"/>
-                    <connections>
-                        <segue destination="2YQ-67-qLf" kind="show" identifier="push3" id="Jvq-M8-epT"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CS6-bT-JwX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -664,7 +707,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Next" id="jb8-7Z-NMH">
                             <color key="tintColor" red="0.93333333730000001" green="0.93333333730000001" blue="0.93333333730000001" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <action selector="next" destination="2YQ-67-qLf" id="T90-0r-vsx"/>
+                                <segue destination="pKH-pf-tIi" kind="show" id="5AW-xx-AZy"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -677,7 +720,6 @@
                         <outlet property="label2" destination="a6B-pH-aIm" id="hsv-4A-hub"/>
                         <outlet property="textField1" destination="tSw-Lb-3oQ" id="gKq-vV-9pL"/>
                         <outlet property="textField2" destination="eNL-zb-r5J" id="0B8-Ca-No3"/>
-                        <segue destination="pKH-pf-tIi" kind="show" identifier="push4" id="dnB-ua-1RM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TXj-SH-smu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -733,7 +775,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Next" id="N0V-fY-90R">
                             <color key="tintColor" red="0.93333333730000001" green="0.93333333730000001" blue="0.93333333730000001" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <action selector="next" destination="pKH-pf-tIi" id="wEd-2I-GIr"/>
+                                <segue destination="GvQ-Jr-1AX" kind="show" id="foZ-dG-sgb"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -741,7 +783,6 @@
                     <size key="freeformSize" width="600" height="1080"/>
                     <connections>
                         <outlet property="collectionView" destination="zyz-LZ-0EV" id="wDl-Yk-LIK"/>
-                        <segue destination="GvQ-Jr-1AX" kind="show" identifier="push5" id="JwG-Jx-wlr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wku-7G-JOK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -778,9 +819,6 @@
                     <navigationItem key="navigationItem" title="Slide 6" id="jgx-qg-fL9">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="xcW-oC-7WA">
                             <color key="tintColor" red="0.93333333730000001" green="0.93333333730000001" blue="0.93333333730000001" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="next" destination="GvQ-Jr-1AX" id="SHb-hW-xVw"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

@@ -12,6 +12,4 @@
 
 @property (nonatomic, weak) IBOutlet UICollectionView *collectionView;
 
--(IBAction)next;
-
 @end

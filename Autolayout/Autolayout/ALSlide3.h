@@ -10,6 +10,4 @@
 
 @interface ALSlide3 : UIViewController
 
--(IBAction)next;
-
 @end

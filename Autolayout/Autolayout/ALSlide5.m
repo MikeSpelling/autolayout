@@ -36,14 +36,6 @@ NSInteger const ALSlide5NumItems = 30;
 }
 
 
-#pragma mark - Actions
-
--(IBAction)next
-{
-    [self performSegueWithIdentifier:@"push5" sender:self];
-}
-
-
 #pragma mark - UICollectionViewDataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -103,6 +95,20 @@ NSInteger const ALSlide5NumItems = 30;
 
 #pragma mark - Rotation
 
+-(void)handleRotation
+{
+    UICollectionViewFlowLayout *flowLayout = (UICollectionViewFlowLayout*)self.collectionView.collectionViewLayout;
+    
+    if (UIInterfaceOrientationIsPortrait([UIApplication sharedApplication].statusBarOrientation)) {
+        flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
+    } else {
+        flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    }
+    
+    self.collectionView.collectionViewLayout = flowLayout;
+    [self.collectionView reloadData];
+}
+
 -(void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
 {
     [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
@@ -121,20 +127,6 @@ NSInteger const ALSlide5NumItems = 30;
 -(void)willRotate
 {
     
-}
-
--(void)handleRotation
-{
-    UICollectionViewFlowLayout *flowLayout = (UICollectionViewFlowLayout*)self.collectionView.collectionViewLayout;
-    
-    if (UIInterfaceOrientationIsPortrait([UIApplication sharedApplication].statusBarOrientation)) {
-        flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
-    } else {
-        flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-    }
-    
-    self.collectionView.collectionViewLayout = flowLayout;
-    [self.collectionView reloadData];
 }
 
 -(void)didRotate

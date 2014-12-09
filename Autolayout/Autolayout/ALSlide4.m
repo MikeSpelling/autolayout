@@ -8,10 +8,6 @@
 
 #import "ALSlide4.h"
 
-@interface ALSlide4 ()
-
-@end
-
 @implementation ALSlide4
 
 - (void)viewDidLoad
@@ -42,11 +38,6 @@
         self.label2.text = @"";
         self.textField2.text = @"";
     }
-}
-
--(IBAction)next
-{
-    [self performSegueWithIdentifier:@"push4" sender:self];
 }
 
 @end

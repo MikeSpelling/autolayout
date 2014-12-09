@@ -15,9 +15,4 @@
     [super viewDidLoad];
 }
 
--(IBAction)next
-{
-    [self performSegueWithIdentifier:@"push3" sender:self];
-}
-
 @end

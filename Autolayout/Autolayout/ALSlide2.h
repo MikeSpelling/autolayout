@@ -25,6 +25,5 @@
 
 -(IBAction)textChanged:(UITextField *)textField;
 -(IBAction)clear:(id)sender;
--(IBAction)next;
 
 @end
