@@ -25,6 +25,7 @@
     } else if (textField == self.bottomTextField) {
         self.bottomLabel.text = self.bottomTextField.text;
     }
+    [self.view layoutIfNeeded];
 }
 
 -(IBAction)clear:(id)sender
