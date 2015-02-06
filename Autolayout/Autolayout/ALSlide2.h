@@ -19,6 +19,9 @@
 @property (nonatomic, weak) IBOutlet UILabel *label1;
 @property (nonatomic, weak) IBOutlet UILabel *label2;
 @property (nonatomic, weak) IBOutlet UILabel *label3;
+@property (nonatomic, weak) IBOutlet UILabel *otherLabel1;
+@property (nonatomic, weak) IBOutlet UILabel *otherLabel2;
+@property (nonatomic, weak) IBOutlet UILabel *otherLabel3;
 @property (nonatomic, weak) IBOutlet UILabel *compressionResistanceLabel1;
 @property (nonatomic, weak) IBOutlet UILabel *compressionResistanceLabel2;
 @property (nonatomic, weak) IBOutlet UILabel *compressionResistanceLabel3;

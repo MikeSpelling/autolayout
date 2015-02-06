@@ -20,6 +20,7 @@ Green view present because of padding between labels (which are 0 height at begi
 - Slide 2 (Compression resistance)
 
 * Control priorities of labels using compression resistance
+* So labels nicely aligned, not centred use >=, rather than = to bottom of superview
 
 
 
@@ -35,8 +36,9 @@ Red label is the opposite
 
 - Slide 4 (Floating below multiple items) DELETE ???
 
-* Add constraints from purple view to both labels with lower priority (999) so compiler doesn’t complain when it has to break 1
-* Labels constrained to each other with red label having higher horizontal resistance so blue compresses first
+* Have >= constraints from purple view to both labels
+* Add = constraints from purple view to both labels with lower priority (999) so compiler doesn’t complain when it has to break 1
+* Labels constrained to each other with red label having higher horizontal resistance so blue compresses first, with a minimum width
 
 
 - Slide 5 (Collection views)
@@ -64,10 +66,9 @@ Red label is the opposite
 * Instead we’ve had to remove constraints and re-add them
 
 
-
+AVAILABLE ON GITHUB!
 
 TODO
-* Show label with bottom pinned to bottom rather than >=
 * Mention Editor -> Pin to superview for edges to ignore margins, top layout accounts for status bar (and nav bar if present)
 Animate transitions
 Other visual format examples
