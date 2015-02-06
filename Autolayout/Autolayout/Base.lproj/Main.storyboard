@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5lc-Hc-soi">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -1028,6 +1029,9 @@ H:|[subview]|</string>
                     <navigationItem key="navigationItem" title="Slide 6" id="jgx-qg-fL9">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="xcW-oC-7WA">
                             <color key="tintColor" red="0.93333333730000001" green="0.93333333730000001" blue="0.93333333730000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="O9U-mg-5zK" kind="show" id="WC8-47-15O"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -1044,6 +1048,143 @@ H:|[subview]|</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hn6-lm-Qvb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5053" y="427"/>
+        </scene>
+        <!--Slide 7-->
+        <scene sceneID="nwd-i3-1r4">
+            <objects>
+                <viewController id="O9U-mg-5zK" customClass="ALSlide7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lvs-Eg-54w"/>
+                        <viewControllerLayoutGuide type="bottom" id="F0A-2H-6na"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dZh-h7-Y3x">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Superview vs Top Layout Guide" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IpT-22-saR">
+                                <rect key="frame" x="16" y="521" width="568" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="eIk-Px-Bs7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="32"/>
+                                <color key="textColor" red="0.96078431610000004" green="0.28627452250000002" blue="0.59215688710000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pinned to top and left layout guides at 0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTD-b6-2uU">
+                                <rect key="frame" x="16" y="64" width="200" height="200"/>
+                                <color key="backgroundColor" red="1" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Zxv-we-ojp"/>
+                                    <constraint firstAttribute="width" constant="200" id="fAI-B1-Wtk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="0.93333333730697632" green="0.93333333730697632" blue="0.93333333730697632" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pinned to top and right of superview at 0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEr-qm-yRU">
+                                <rect key="frame" x="400" y="200" width="200" height="200"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="L5M-s4-fKT"/>
+                                    <constraint firstAttribute="width" constant="200" id="oxA-AG-iQe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="0.93333333730000001" green="0.93333333730000001" blue="0.93333333730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18823529780000001" green="0.18823529780000001" blue="0.18823529780000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="gTD-b6-2uU" firstAttribute="top" secondItem="lvs-Eg-54w" secondAttribute="bottom" id="0xs-Yf-V2B"/>
+                            <constraint firstAttribute="trailing" secondItem="IpT-22-saR" secondAttribute="trailing" constant="16" id="1Zb-xi-0PR"/>
+                            <constraint firstItem="gTD-b6-2uU" firstAttribute="leading" secondItem="dZh-h7-Y3x" secondAttribute="leadingMargin" id="28f-Ia-f5p"/>
+                            <constraint firstItem="IpT-22-saR" firstAttribute="leading" secondItem="dZh-h7-Y3x" secondAttribute="leading" constant="16" id="UBl-a1-Pgn"/>
+                            <constraint firstAttribute="trailing" secondItem="oEr-qm-yRU" secondAttribute="trailing" id="jO5-QZ-k8b"/>
+                            <constraint firstAttribute="centerY" secondItem="IpT-22-saR" secondAttribute="centerY" id="oa8-v1-Sh6"/>
+                            <constraint firstItem="oEr-qm-yRU" firstAttribute="top" secondItem="dZh-h7-Y3x" secondAttribute="top" constant="200" id="sie-LV-W2b"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Slide 7" id="CFK-W8-XOp">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="hn9-22-2W6">
+                            <color key="tintColor" red="0.93333333730000001" green="0.93333333730000001" blue="0.93333333730000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="vqI-h1-tEd" kind="show" id="Tio-lE-spo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="1080"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CJT-cK-JdD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5949" y="427"/>
+        </scene>
+        <!--Slide 8-->
+        <scene sceneID="eEw-56-4Eq">
+            <objects>
+                <viewController id="vqI-h1-tEd" customClass="ALSlide8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="X20-qx-NTP"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hav-JL-Ggb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fxn-nM-Ec2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dp8-BW-wGX">
+                                <rect key="frame" x="432" y="100" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.84313725490000002" green="0.015686274510000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="d1V-Pp-Aua"/>
+                                    <constraint firstAttribute="width" constant="100" id="doZ-Jc-ut7"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animating changing constraints" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAS-nU-nm6">
+                                <rect key="frame" x="83.5" y="292" width="432.5" height="38"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="32"/>
+                                <color key="textColor" red="0.96078431606292725" green="0.28627452254295349" blue="0.59215688705444336" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbt-bi-Asd">
+                                <rect key="frame" x="73" y="100" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Ktm-Rp-tMT"/>
+                                    <constraint firstAttribute="width" constant="100" id="eNy-1s-z1H"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18823529780000001" green="0.18823529780000001" blue="0.18823529780000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Dp8-BW-wGX" secondAttribute="trailing" constant="68" id="2eW-cU-Wpj"/>
+                            <constraint firstItem="Dp8-BW-wGX" firstAttribute="top" secondItem="X20-qx-NTP" secondAttribute="bottom" constant="36" id="8cQ-rO-mFv"/>
+                            <constraint firstItem="mAS-nU-nm6" firstAttribute="top" secondItem="Dp8-BW-wGX" secondAttribute="bottom" constant="92" id="HSX-es-Zs6"/>
+                            <constraint firstAttribute="centerX" secondItem="mAS-nU-nm6" secondAttribute="centerX" id="HdQ-As-1Yd"/>
+                            <constraint firstItem="nbt-bi-Asd" firstAttribute="top" secondItem="Fxn-nM-Ec2" secondAttribute="top" constant="100" id="ggf-tz-baZ"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="mAS-nU-nm6" secondAttribute="trailing" id="kxb-wL-Qdd"/>
+                            <constraint firstItem="nbt-bi-Asd" firstAttribute="leading" secondItem="Fxn-nM-Ec2" secondAttribute="leading" constant="73" id="rBY-uN-Dxx"/>
+                            <constraint firstItem="mAS-nU-nm6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Fxn-nM-Ec2" secondAttribute="leadingMargin" id="sAa-B0-rLq"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Slide 8" id="ghW-vP-0j1">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="8lS-yP-AgW">
+                            <color key="tintColor" red="0.93333333730000001" green="0.93333333730000001" blue="0.93333333730000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="1080"/>
+                    <connections>
+                        <outlet property="greenWidth" destination="eNy-1s-z1H" id="xrR-3B-9IN"/>
+                        <outlet property="greenheight" destination="Ktm-Rp-tMT" id="XFr-9W-0aD"/>
+                        <outlet property="purpleTop" destination="8cQ-rO-mFv" id="ORV-rz-pi6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gHz-cR-8R3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6794" y="427"/>
         </scene>
     </scenes>
 </document>

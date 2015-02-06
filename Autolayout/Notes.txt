@@ -55,7 +55,7 @@ Red label is the opposite
 
 * Programatically add constraints using the visual formatting language
 * Hitting “Do it!” will pin the red view to the blue view - making it expand to fill whatever size it is
-* Can also set priorities, widths, heights etc…
+* Just briefly mentioning this - you can also set priorities, widths, heights etc… Look it up if your interested!
 * Our general use case is adding nibs as subviews which automatically expand to fill their superviews
 * Show UIView+ALAutoLayout category
 * MUST HAVE translatesAutoresizingMaskIntoConstraints = NO to work!!!
@@ -66,9 +66,22 @@ Red label is the opposite
 * Instead we’ve had to remove constraints and re-add them
 
 
+- Slide 7 (Layout guides)
+
+
+* Adds a default margin to the left and right, and accounts for status bar/nav bar if present at top.
+* In some cases we want stuff to go under these (e.g. collection views scroll underneath).
+* To achieve this you have to go to Editor -> Pin -> Superview, rather than dragging and clicking
+* We never use the default layout margins - would add our own if we wanted!
+
+
+- Slide 8 (Animation)
+
+* Pretty easy - Hooked up constraints as IBOutlets
+* Change the constant then call [view layoutIfNeeded] within an animation block…
+
+
 AVAILABLE ON GITHUB!
 
 TODO
-* Mention Editor -> Pin to superview for edges to ignore margins, top layout accounts for status bar (and nav bar if present)
 Animate transitions
-Other visual format examples

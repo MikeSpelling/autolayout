@@ -15,6 +15,8 @@
 		904CE8C91A3751A5003F8622 /* ALCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 904CE8C71A3751A5003F8622 /* ALCollectionViewCell.m */; };
 		904CE8CA1A3751A5003F8622 /* ALCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 904CE8C81A3751A5003F8622 /* ALCollectionViewCell.xib */; };
 		904CE8CD1A376A56003F8622 /* ALSlide6.m in Sources */ = {isa = PBXBuildFile; fileRef = 904CE8CC1A376A56003F8622 /* ALSlide6.m */; };
+		90636C821A84F62E00A27F61 /* ALSlide7.m in Sources */ = {isa = PBXBuildFile; fileRef = 90636C811A84F62E00A27F61 /* ALSlide7.m */; };
+		90636C851A84F94F00A27F61 /* ALSlide8.m in Sources */ = {isa = PBXBuildFile; fileRef = 90636C841A84F94F00A27F61 /* ALSlide8.m */; };
 		90D9C7E71A0A8B8D009046E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D9C7E61A0A8B8D009046E9 /* main.m */; };
 		90D9C7EA1A0A8B8D009046E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D9C7E91A0A8B8D009046E9 /* AppDelegate.m */; };
 		90D9C7ED1A0A8B8D009046E9 /* ALSlide1.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D9C7EC1A0A8B8D009046E9 /* ALSlide1.m */; };
@@ -50,6 +52,10 @@
 		904CE8C81A3751A5003F8622 /* ALCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALCollectionViewCell.xib; sourceTree = "<group>"; };
 		904CE8CB1A376A56003F8622 /* ALSlide6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSlide6.h; sourceTree = "<group>"; };
 		904CE8CC1A376A56003F8622 /* ALSlide6.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALSlide6.m; sourceTree = "<group>"; };
+		90636C801A84F62E00A27F61 /* ALSlide7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSlide7.h; sourceTree = "<group>"; };
+		90636C811A84F62E00A27F61 /* ALSlide7.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALSlide7.m; sourceTree = "<group>"; };
+		90636C831A84F94F00A27F61 /* ALSlide8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSlide8.h; sourceTree = "<group>"; };
+		90636C841A84F94F00A27F61 /* ALSlide8.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALSlide8.m; sourceTree = "<group>"; };
 		90D9C7E11A0A8B8D009046E9 /* Autolayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Autolayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90D9C7E51A0A8B8D009046E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90D9C7E61A0A8B8D009046E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -118,6 +124,8 @@
 				904CE8C11A37464A003F8622 /* ALSlide5.m */,
 				904CE8CB1A376A56003F8622 /* ALSlide6.h */,
 				904CE8CC1A376A56003F8622 /* ALSlide6.m */,
+				90636C801A84F62E00A27F61 /* ALSlide7.h */,
+				90636C811A84F62E00A27F61 /* ALSlide7.m */,
 				904CE8C31A374DD3003F8622 /* UIView+ALAutoLayout.h */,
 				904CE8C41A374DD3003F8622 /* UIView+ALAutoLayout.m */,
 				904CE8C61A3751A5003F8622 /* ALCollectionViewCell.h */,
@@ -127,6 +135,8 @@
 				90D9C7F11A0A8B8D009046E9 /* Images.xcassets */,
 				90D9C7F31A0A8B8D009046E9 /* LaunchScreen.xib */,
 				90D9C7E41A0A8B8D009046E9 /* Supporting Files */,
+				90636C831A84F94F00A27F61 /* ALSlide8.h */,
+				90636C841A84F94F00A27F61 /* ALSlide8.m */,
 			);
 			path = Autolayout;
 			sourceTree = "<group>";
@@ -267,7 +277,9 @@
 				904CE8BC1A373669003F8622 /* ALSlide3.m in Sources */,
 				904CE8C21A37464A003F8622 /* ALSlide5.m in Sources */,
 				904CE8C51A374DD3003F8622 /* UIView+ALAutoLayout.m in Sources */,
+				90636C821A84F62E00A27F61 /* ALSlide7.m in Sources */,
 				90D9C7E71A0A8B8D009046E9 /* main.m in Sources */,
+				90636C851A84F94F00A27F61 /* ALSlide8.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
