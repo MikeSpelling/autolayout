@@ -1233,7 +1233,7 @@ H:|[subview]|</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHF-pX-fpd">
-                                <rect key="frame" x="32" y="198" width="536" height="47"/>
+                                <rect key="frame" x="32" y="166" width="536" height="47"/>
                                 <string key="text">Source available at:
 https://github.com/MikeSpelling/autolayout</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
@@ -1246,21 +1246,35 @@ https://github.com/MikeSpelling/autolayout</string>
                                 <color key="textColor" red="0.93333333730000001" green="0.93333333730000001" blue="0.93333333730000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="questions" translatesAutoresizingMaskIntoConstraints="NO" id="aLO-uB-5e6">
+                                <rect key="frame" x="8" y="402.5" width="584" height="275"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.18823529780000001" green="0.18823529780000001" blue="0.18823529780000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="aLO-uB-5e6" secondAttribute="trailing" constant="8" id="2Aj-fh-1XG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="FHF-pX-fpd" secondAttribute="trailing" constant="16" id="44x-ca-OAs"/>
                             <constraint firstItem="FHF-pX-fpd" firstAttribute="leading" secondItem="g8l-M6-Boh" secondAttribute="leadingMargin" constant="16" id="9kW-Em-A92"/>
                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="8tK-tc-uv4" secondAttribute="trailing" id="Dn3-Oc-JZe"/>
                             <constraint firstAttribute="bottom" secondItem="yB7-57-Zgr" secondAttribute="bottom" constant="16" id="F7u-sC-QTO"/>
                             <constraint firstItem="8tK-tc-uv4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="g8l-M6-Boh" secondAttribute="leadingMargin" id="Hdq-Vz-gko"/>
                             <constraint firstItem="8tK-tc-uv4" firstAttribute="top" secondItem="JLR-Yn-V9B" secondAttribute="bottom" constant="32" id="HjN-kZ-ab2"/>
+                            <constraint firstItem="yB7-57-Zgr" firstAttribute="top" relation="greaterThanOrEqual" secondItem="aLO-uB-5e6" secondAttribute="bottom" constant="32" id="QgI-ue-RrL"/>
                             <constraint firstAttribute="trailing" secondItem="yB7-57-Zgr" secondAttribute="trailing" constant="16" id="YkA-EU-Fr2"/>
                             <constraint firstAttribute="centerX" secondItem="8tK-tc-uv4" secondAttribute="centerX" id="ZCP-8N-drH"/>
                             <constraint firstItem="yB7-57-Zgr" firstAttribute="top" relation="greaterThanOrEqual" secondItem="FHF-pX-fpd" secondAttribute="bottom" constant="64" id="bzQ-Cd-qtd"/>
+                            <constraint firstItem="aLO-uB-5e6" firstAttribute="leading" secondItem="g8l-M6-Boh" secondAttribute="leading" constant="8" id="fx7-l5-hue"/>
                             <constraint firstItem="yB7-57-Zgr" firstAttribute="leading" secondItem="g8l-M6-Boh" secondAttribute="leading" constant="16" id="iTS-H2-AgM"/>
-                            <constraint firstItem="FHF-pX-fpd" firstAttribute="top" secondItem="8tK-tc-uv4" secondAttribute="bottom" constant="64" id="jtc-ON-Ne2"/>
+                            <constraint firstAttribute="centerY" secondItem="aLO-uB-5e6" secondAttribute="centerY" id="jWc-h7-ujA"/>
+                            <constraint firstItem="FHF-pX-fpd" firstAttribute="top" secondItem="8tK-tc-uv4" secondAttribute="bottom" constant="32" id="jtc-ON-Ne2"/>
+                            <constraint firstItem="yB7-57-Zgr" firstAttribute="top" relation="greaterThanOrEqual" secondItem="FHF-pX-fpd" secondAttribute="bottom" constant="64" id="qkr-oz-Lxa"/>
+                            <constraint firstItem="yB7-57-Zgr" firstAttribute="top" relation="greaterThanOrEqual" secondItem="aLO-uB-5e6" secondAttribute="top" constant="32" id="uMK-cT-F8O"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="bzQ-Cd-qtd"/>
+                            </mask>
+                        </variation>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Its over!" id="WrN-yH-bi7"/>
@@ -1275,6 +1289,7 @@ https://github.com/MikeSpelling/autolayout</string>
     <resources>
         <image name="AutoMagic" width="541" height="222"/>
         <image name="clown" width="225" height="300"/>
+        <image name="questions" width="403" height="275"/>
         <image name="submarine" width="840" height="675"/>
         <image name="yoyo" width="500" height="500"/>
     </resources>
