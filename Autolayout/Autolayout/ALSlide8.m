@@ -50,7 +50,7 @@
 
 -(void)adjustPurpleView
 {
-    NSInteger adjustment = self.expandViews ? 200 : 100;
+    NSInteger adjustment = self.expandViews ? 300 : 50;
     self.purpleTop.constant = adjustment;
 }
 

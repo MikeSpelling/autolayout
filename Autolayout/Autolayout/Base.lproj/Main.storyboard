@@ -40,11 +40,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Automagical Layout" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bl5-rR-QVE">
-                                <rect key="frame" x="16" y="128" width="568" height="43"/>
+                                <rect key="frame" x="16" y="128" width="568" height="42.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="36"/>
                                 <color key="textColor" red="0.96078431606292725" green="0.28627452254295349" blue="0.59215688705444336" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AutoMagic" translatesAutoresizingMaskIntoConstraints="NO" id="90t-6s-VHc">
+                                <rect key="frame" x="0.0" y="429" width="600" height="222"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Michael Spelling - iPlayer Radio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLJ-zy-ft5">
                                 <rect key="frame" x="16" y="1020" width="568" height="28"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
@@ -55,12 +58,16 @@
                         <color key="backgroundColor" red="0.18823529779911041" green="0.18823529779911041" blue="0.18823529779911041" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="cLJ-zy-ft5" firstAttribute="leading" secondItem="CQa-QZ-ry1" secondAttribute="leading" constant="16" id="2U3-bO-hR6"/>
+                            <constraint firstAttribute="centerY" secondItem="90t-6s-VHc" secondAttribute="centerY" id="2qk-EU-Jmh"/>
                             <constraint firstAttribute="trailing" secondItem="cLJ-zy-ft5" secondAttribute="trailing" constant="16" id="4hg-wu-AJf"/>
                             <constraint firstAttribute="bottom" secondItem="cLJ-zy-ft5" secondAttribute="bottom" constant="32" id="BEo-do-jnS"/>
+                            <constraint firstItem="cLJ-zy-ft5" firstAttribute="top" relation="greaterThanOrEqual" secondItem="90t-6s-VHc" secondAttribute="bottom" constant="32" id="RO0-CB-Fs2"/>
                             <constraint firstItem="bl5-rR-QVE" firstAttribute="top" secondItem="p6j-Sd-YYw" secondAttribute="bottom" constant="64" id="WAX-hg-MWL"/>
                             <constraint firstAttribute="trailing" secondItem="bl5-rR-QVE" secondAttribute="trailing" constant="16" id="cZX-dG-de2"/>
-                            <constraint firstItem="cLJ-zy-ft5" firstAttribute="top" relation="greaterThanOrEqual" secondItem="bl5-rR-QVE" secondAttribute="bottom" constant="32" id="xgc-1d-6CJ"/>
+                            <constraint firstItem="90t-6s-VHc" firstAttribute="leading" secondItem="CQa-QZ-ry1" secondAttribute="leading" id="vp5-j9-pUm"/>
+                            <constraint firstAttribute="trailing" secondItem="90t-6s-VHc" secondAttribute="trailing" id="wvI-Nn-NxZ"/>
                             <constraint firstItem="bl5-rR-QVE" firstAttribute="leading" secondItem="CQa-QZ-ry1" secondAttribute="leading" constant="16" id="y7p-Iq-qHD"/>
+                            <constraint firstItem="90t-6s-VHc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="bl5-rR-QVE" secondAttribute="bottom" constant="32" id="z2d-gu-wnb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Welcome" id="RAh-sR-eGD">
@@ -75,7 +82,7 @@
             </objects>
             <point key="canvasLocation" x="-355" y="427"/>
         </scene>
-        <!--Slide 1-->
+        <!--Autosizing Views-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ALSlide1" sceneMemberID="viewController">
@@ -212,7 +219,7 @@
                             <constraint firstItem="uDg-vA-R8C" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="x4g-eI-dLN"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Slide 1" id="ONU-jK-xFt">
+                    <navigationItem key="navigationItem" title="Autosizing Views" id="ONU-jK-xFt" userLabel="Autosizing Views">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="nh4-gw-Uv1">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
@@ -235,7 +242,7 @@
             </objects>
             <point key="canvasLocation" x="454" y="427"/>
         </scene>
-        <!--Slide 2-->
+        <!--Compression Resistance-->
         <scene sceneID="5nA-fJ-Cq7">
             <objects>
                 <viewController id="C0q-1L-MIz" customClass="ALSlide2" sceneMemberID="viewController">
@@ -490,7 +497,7 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Slide 2" id="2FU-6f-6g8">
+                    <navigationItem key="navigationItem" title="Compression Resistance" id="2FU-6f-6g8">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="9TV-NB-GV8">
                             <color key="tintColor" red="0.93333333730697632" green="0.93333333730697632" blue="0.93333333730697632" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
@@ -520,7 +527,7 @@
             </objects>
             <point key="canvasLocation" x="1374" y="427"/>
         </scene>
-        <!--Slide 3-->
+        <!--Content Hugging-->
         <scene sceneID="wDH-CV-tHo">
             <objects>
                 <viewController id="pjA-ht-EMi" customClass="ALSlide3" sceneMemberID="viewController">
@@ -638,7 +645,7 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Slide 3" id="p7l-rm-wsW">
+                    <navigationItem key="navigationItem" title="Content Hugging" id="p7l-rm-wsW">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="8b5-AM-6Qw">
                             <color key="tintColor" red="0.93333333730000001" green="0.93333333730000001" blue="0.93333333730000001" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
@@ -653,7 +660,7 @@
             </objects>
             <point key="canvasLocation" x="2248" y="427"/>
         </scene>
-        <!--Slide 4-->
+        <!--Multiple Constraints-->
         <scene sceneID="WNN-TU-nJk">
             <objects>
                 <viewController id="2YQ-67-qLf" customClass="ALSlide4" sceneMemberID="viewController">
@@ -732,15 +739,14 @@
                                 <color key="textColor" red="0.93333333730697632" green="0.93333333730697632" blue="0.93333333730697632" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Something underneath both!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Yu-xp-sYS">
-                                <rect key="frame" x="8" y="260" width="584" height="28"/>
-                                <color key="backgroundColor" red="0.84313725490000002" green="0.015686274510000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                                <color key="textColor" red="0.93333333730697632" green="0.93333333730697632" blue="0.93333333730697632" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="submarine" translatesAutoresizingMaskIntoConstraints="NO" id="2e9-zX-BXD">
+                                <rect key="frame" x="8" y="260" width="584" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="hXc-bT-cKt"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have to have both == constraint with lower priority to >= constraint to avoid ambiguity and enable greater difference" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHJ-ug-1zc">
-                                <rect key="frame" x="8" y="352" width="584" height="84"/>
+                                <rect key="frame" x="8" y="442" width="584" height="84"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
                                 <color key="textColor" red="0.93333333730697632" green="0.93333333730697632" blue="0.93333333730697632" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -748,40 +754,40 @@
                         </subviews>
                         <color key="backgroundColor" red="0.18823529780000001" green="0.18823529780000001" blue="0.18823529780000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="2e9-zX-BXD" firstAttribute="top" secondItem="a6B-pH-aIm" secondAttribute="bottom" priority="999" constant="8" id="0hf-6v-Bng"/>
                             <constraint firstItem="eNL-zb-r5J" firstAttribute="leading" secondItem="t7r-mv-GMh" secondAttribute="leading" constant="8" id="0tD-2R-23G"/>
                             <constraint firstItem="WBx-1h-eYQ" firstAttribute="leading" secondItem="t7r-mv-GMh" secondAttribute="leading" constant="8" id="1Nc-WN-7wr"/>
+                            <constraint firstItem="2e9-zX-BXD" firstAttribute="top" secondItem="WBx-1h-eYQ" secondAttribute="bottom" priority="999" constant="8" id="4gj-fB-3Zz"/>
                             <constraint firstItem="a6B-pH-aIm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WBx-1h-eYQ" secondAttribute="trailing" constant="8" id="5Wn-zT-t31"/>
                             <constraint firstItem="MYz-Op-tC5" firstAttribute="height" secondItem="eNL-zb-r5J" secondAttribute="height" id="6Gs-XB-SAj"/>
                             <constraint firstAttribute="trailing" secondItem="vaB-dl-6XL" secondAttribute="trailing" constant="16" id="6pk-UE-WqB"/>
+                            <constraint firstItem="2e9-zX-BXD" firstAttribute="top" relation="greaterThanOrEqual" secondItem="WBx-1h-eYQ" secondAttribute="bottom" constant="8" id="7Ii-JD-VxW"/>
                             <constraint firstItem="pmb-Ks-btA" firstAttribute="centerY" secondItem="tSw-Lb-3oQ" secondAttribute="centerY" id="7p8-AU-ZM3"/>
                             <constraint firstItem="UHJ-ug-1zc" firstAttribute="leading" secondItem="t7r-mv-GMh" secondAttribute="leading" constant="8" id="7qA-qg-8ap"/>
                             <constraint firstItem="vaB-dl-6XL" firstAttribute="leading" secondItem="t7r-mv-GMh" secondAttribute="leading" constant="16" id="Brv-4m-wR2"/>
+                            <constraint firstItem="2e9-zX-BXD" firstAttribute="leading" secondItem="t7r-mv-GMh" secondAttribute="leading" constant="8" id="FFm-tG-lj0"/>
                             <constraint firstAttribute="trailing" secondItem="MYz-Op-tC5" secondAttribute="trailing" constant="8" id="Jm9-cl-6EZ"/>
+                            <constraint firstItem="2e9-zX-BXD" firstAttribute="top" relation="greaterThanOrEqual" secondItem="a6B-pH-aIm" secondAttribute="bottom" constant="8" id="KUv-2u-z9I"/>
                             <constraint firstItem="WBx-1h-eYQ" firstAttribute="top" secondItem="eNL-zb-r5J" secondAttribute="bottom" constant="20" id="Nf5-7l-79f"/>
-                            <constraint firstItem="6Yu-xp-sYS" firstAttribute="top" relation="greaterThanOrEqual" secondItem="WBx-1h-eYQ" secondAttribute="bottom" constant="8" id="Psm-YM-ITg"/>
                             <constraint firstItem="tSw-Lb-3oQ" firstAttribute="leading" secondItem="t7r-mv-GMh" secondAttribute="leading" constant="8" id="R5N-rA-iGM"/>
                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="UHJ-ug-1zc" secondAttribute="bottom" constant="16" id="RcT-Ul-qEd"/>
-                            <constraint firstItem="UHJ-ug-1zc" firstAttribute="top" secondItem="6Yu-xp-sYS" secondAttribute="bottom" constant="64" id="WRR-Xr-A9W"/>
-                            <constraint firstItem="6Yu-xp-sYS" firstAttribute="top" secondItem="WBx-1h-eYQ" secondAttribute="bottom" priority="999" constant="8" id="Wi0-Yi-Uob"/>
                             <constraint firstItem="eNL-zb-r5J" firstAttribute="top" secondItem="tSw-Lb-3oQ" secondAttribute="bottom" constant="16" id="XUr-8R-fA2"/>
-                            <constraint firstAttribute="trailing" secondItem="6Yu-xp-sYS" secondAttribute="trailing" constant="8" id="ee4-x0-iiY"/>
+                            <constraint firstItem="UHJ-ug-1zc" firstAttribute="top" secondItem="2e9-zX-BXD" secondAttribute="bottom" constant="32" id="XjV-e9-XdY"/>
                             <constraint firstItem="a6B-pH-aIm" firstAttribute="top" secondItem="WBx-1h-eYQ" secondAttribute="top" id="gIS-0T-G1F"/>
                             <constraint firstAttribute="trailing" secondItem="a6B-pH-aIm" secondAttribute="trailing" constant="8" id="ghJ-R2-9vZ"/>
-                            <constraint firstItem="6Yu-xp-sYS" firstAttribute="leading" secondItem="t7r-mv-GMh" secondAttribute="leading" constant="8" id="hMa-9m-c4i"/>
                             <constraint firstItem="MYz-Op-tC5" firstAttribute="leading" secondItem="eNL-zb-r5J" secondAttribute="trailing" constant="8" id="hT1-1b-lbu"/>
+                            <constraint firstAttribute="trailing" secondItem="2e9-zX-BXD" secondAttribute="trailing" constant="8" id="kyc-mT-iKh"/>
                             <constraint firstAttribute="trailing" secondItem="pmb-Ks-btA" secondAttribute="trailing" constant="8" id="l1S-uX-E7h"/>
                             <constraint firstItem="vaB-dl-6XL" firstAttribute="top" secondItem="aVz-m5-KzI" secondAttribute="bottom" constant="16" id="lgN-eg-lTp"/>
-                            <constraint firstItem="6Yu-xp-sYS" firstAttribute="top" secondItem="a6B-pH-aIm" secondAttribute="bottom" priority="999" constant="8" id="nU5-VD-6Me"/>
                             <constraint firstItem="tSw-Lb-3oQ" firstAttribute="top" secondItem="vaB-dl-6XL" secondAttribute="bottom" constant="8" id="oBq-ZU-FQr"/>
                             <constraint firstItem="pmb-Ks-btA" firstAttribute="height" secondItem="tSw-Lb-3oQ" secondAttribute="height" id="sku-OD-E4M"/>
                             <constraint firstItem="MYz-Op-tC5" firstAttribute="centerY" secondItem="eNL-zb-r5J" secondAttribute="centerY" id="smm-Ue-H1Y"/>
-                            <constraint firstItem="6Yu-xp-sYS" firstAttribute="top" relation="greaterThanOrEqual" secondItem="a6B-pH-aIm" secondAttribute="bottom" constant="8" id="uOE-Kj-uyV"/>
                             <constraint firstItem="pmb-Ks-btA" firstAttribute="leading" secondItem="tSw-Lb-3oQ" secondAttribute="trailing" constant="8" id="uVT-ZR-Vy9"/>
                             <constraint firstAttribute="trailing" secondItem="UHJ-ug-1zc" secondAttribute="trailing" constant="8" id="yzH-tV-eum"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Slide 4" id="CT9-bx-4SA">
+                    <navigationItem key="navigationItem" title="Multiple Constraints" id="CT9-bx-4SA">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="jb8-7Z-NMH">
                             <color key="tintColor" red="0.93333333730000001" green="0.93333333730000001" blue="0.93333333730000001" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
@@ -804,7 +810,7 @@
             </objects>
             <point key="canvasLocation" x="3179" y="427"/>
         </scene>
-        <!--Slide 5-->
+        <!--Collection VIews-->
         <scene sceneID="uPE-YY-KM9">
             <objects>
                 <viewController id="pKH-pf-tIi" customClass="ALSlide5" sceneMemberID="viewController">
@@ -849,7 +855,7 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Slide 5" id="YMe-4l-R0h">
+                    <navigationItem key="navigationItem" title="Collection VIews" id="YMe-4l-R0h">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="N0V-fY-90R">
                             <color key="tintColor" red="0.93333333730000001" green="0.93333333730000001" blue="0.93333333730000001" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
@@ -867,7 +873,7 @@
             </objects>
             <point key="canvasLocation" x="4147" y="427"/>
         </scene>
-        <!--Slide 6-->
+        <!--Programmatic Constraints-->
         <scene sceneID="PRr-dx-UfD">
             <objects>
                 <viewController id="GvQ-Jr-1AX" customClass="ALSlide6" sceneMemberID="viewController">
@@ -1026,7 +1032,7 @@ H:|[subview]|</string>
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Slide 6" id="jgx-qg-fL9">
+                    <navigationItem key="navigationItem" title="Programmatic Constraints" id="jgx-qg-fL9">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="xcW-oC-7WA">
                             <color key="tintColor" red="0.93333333730000001" green="0.93333333730000001" blue="0.93333333730000001" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
@@ -1049,7 +1055,7 @@ H:|[subview]|</string>
             </objects>
             <point key="canvasLocation" x="5053" y="427"/>
         </scene>
-        <!--Slide 7-->
+        <!--Layout Guide-->
         <scene sceneID="nwd-i3-1r4">
             <objects>
                 <viewController id="O9U-mg-5zK" customClass="ALSlide7" sceneMemberID="viewController">
@@ -1082,7 +1088,7 @@ H:|[subview]|</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pinned to top and right of superview at 0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEr-qm-yRU">
-                                <rect key="frame" x="400" y="200" width="200" height="200"/>
+                                <rect key="frame" x="400" y="0.0" width="200" height="200"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="L5M-s4-fKT"/>
@@ -1101,11 +1107,11 @@ H:|[subview]|</string>
                             <constraint firstItem="IpT-22-saR" firstAttribute="leading" secondItem="dZh-h7-Y3x" secondAttribute="leading" constant="16" id="UBl-a1-Pgn"/>
                             <constraint firstAttribute="trailing" secondItem="oEr-qm-yRU" secondAttribute="trailing" id="jO5-QZ-k8b"/>
                             <constraint firstAttribute="centerY" secondItem="IpT-22-saR" secondAttribute="centerY" id="oa8-v1-Sh6"/>
-                            <constraint firstItem="oEr-qm-yRU" firstAttribute="top" secondItem="dZh-h7-Y3x" secondAttribute="top" constant="200" id="sie-LV-W2b"/>
+                            <constraint firstItem="oEr-qm-yRU" firstAttribute="top" secondItem="dZh-h7-Y3x" secondAttribute="top" id="sie-LV-W2b"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Slide 7" id="CFK-W8-XOp">
+                    <navigationItem key="navigationItem" title="Layout Guide" id="CFK-W8-XOp">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="hn9-22-2W6">
                             <color key="tintColor" red="0.93333333730000001" green="0.93333333730000001" blue="0.93333333730000001" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
@@ -1120,7 +1126,7 @@ H:|[subview]|</string>
             </objects>
             <point key="canvasLocation" x="5949" y="427"/>
         </scene>
-        <!--Slide 8-->
+        <!--Animations-->
         <scene sceneID="eEw-56-4Eq">
             <objects>
                 <viewController id="vqI-h1-tEd" customClass="ALSlide8" sceneMemberID="viewController">
@@ -1134,10 +1140,19 @@ H:|[subview]|</string>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dp8-BW-wGX">
                                 <rect key="frame" x="432" y="100" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.84313725490000002" green="0.015686274510000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yoyo" translatesAutoresizingMaskIntoConstraints="NO" id="aZm-Zo-iH6">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="aZm-Zo-iH6" secondAttribute="centerY" id="SOI-0I-9Pa"/>
+                                    <constraint firstAttribute="centerX" secondItem="aZm-Zo-iH6" secondAttribute="centerX" id="WvM-Dp-0Fe"/>
                                     <constraint firstAttribute="height" constant="100" id="d1V-Pp-Aua"/>
                                     <constraint firstAttribute="width" constant="100" id="doZ-Jc-ut7"/>
+                                    <constraint firstItem="aZm-Zo-iH6" firstAttribute="height" secondItem="Dp8-BW-wGX" secondAttribute="height" id="iBs-2z-u04"/>
+                                    <constraint firstItem="aZm-Zo-iH6" firstAttribute="width" secondItem="Dp8-BW-wGX" secondAttribute="width" id="uT0-dy-pXE"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animating changing constraints" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAS-nU-nm6">
@@ -1149,10 +1164,19 @@ H:|[subview]|</string>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbt-bi-Asd">
                                 <rect key="frame" x="73" y="100" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clown" translatesAutoresizingMaskIntoConstraints="NO" id="IwQ-OL-Ye0">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" secondItem="IwQ-OL-Ye0" secondAttribute="height" id="JGf-XJ-Vyd"/>
                                     <constraint firstAttribute="height" constant="100" id="Ktm-Rp-tMT"/>
+                                    <constraint firstAttribute="width" secondItem="IwQ-OL-Ye0" secondAttribute="width" id="SC0-tw-JSh"/>
                                     <constraint firstAttribute="width" constant="100" id="eNy-1s-z1H"/>
+                                    <constraint firstAttribute="centerX" secondItem="IwQ-OL-Ye0" secondAttribute="centerX" id="tIT-UZ-fjx"/>
+                                    <constraint firstAttribute="centerY" secondItem="IwQ-OL-Ye0" secondAttribute="centerY" id="uwh-Tl-E1d"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -1169,7 +1193,7 @@ H:|[subview]|</string>
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Slide 8" id="ghW-vP-0j1">
+                    <navigationItem key="navigationItem" title="Animations" id="ghW-vP-0j1">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="8lS-yP-AgW">
                             <color key="tintColor" red="0.93333333730000001" green="0.93333333730000001" blue="0.93333333730000001" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
@@ -1248,4 +1272,10 @@ https://github.com/MikeSpelling/autolayout</string>
             <point key="canvasLocation" x="7616" y="427"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AutoMagic" width="541" height="222"/>
+        <image name="clown" width="225" height="300"/>
+        <image name="submarine" width="840" height="675"/>
+        <image name="yoyo" width="500" height="500"/>
+    </resources>
 </document>
